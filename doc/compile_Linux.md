@@ -21,7 +21,7 @@
     git clone https://github.com/t2020114/xmr-stak.git
     mkdir xmr-stak/build
     cd xmr-stak/build
-    cmake ..
+    cmake .. -DCMAKE_LINK_STATIC=ON -DXMR-STAK_COMPILE=generic -DXMR-STAK_CURRENCY=monero -DOpenCL_ENABLE=OFF
     make install
 
     # Arch
